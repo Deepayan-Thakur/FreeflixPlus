@@ -17,7 +17,7 @@ const library = [
                 desc: "Bollyflix.do is a specialized streaming hub for Bollywood and South Indian cinema, offering high-definition movies and Hindi-dubbed content without subscription fees. While its massive, easily searchable library appeals to Indian cinema fans, the site is a pirate platform hosting unlicensed material. Users face significant risks from malware-heavy ads and tracking scripts, making the use of a robust VPN and ad-blockers mandatory for safety. Always prioritize legal alternatives to avoid copyright issues and security threats."
             },
             { 
-                name: "BollyFlix",  
+                name: "SSR Movies",  
                 type: "Downloading",
                 url: "https://ssrmovies.you/", 
                 img: "https://www.tradeflockasia.com/wp-content/uploads/2025/05/SSR-Movies-Stream-New-Releases-Fast.webp",
