@@ -1,0 +1,224 @@
+/* ... Keep previous CSS ... */
+:root {
+    --cinematic-black: #050505;
+    --cinematic-gold: #c5a059;
+    --deep-gray: #1a1a1a;
+    --text-main: #e0e0e0;
+    --transition-smooth: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cinematic-black);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Background Vignette Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.8) 100%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), var(--cinematic-black)),
+                url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 5rem);
+    color: var(--cinematic-gold);
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    filter: drop-shadow(0 0 15px rgba(197, 160, 89, 0.4));
+}
+
+.container {
+    max-width: 1300px;
+    margin: -50px auto 100px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 20;
+}
+
+.section-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-left: 4px solid var(--cinematic-gold);
+    padding-left: 20px;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+/* Card Styling */
+.card {
+    background: var(--deep-gray);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cinematic-gold);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.img-box {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    filter: grayscale(40%);
+    transition: var(--transition-smooth);
+}
+
+.card:hover .img-box img { filter: grayscale(0%); transform: scale(1.05); }
+
+.card-body { padding: 25px; }
+
+.card-body h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    border: none;
+}
+
+.watch-now { background: var(--cinematic-gold); color: black; }
+.know-more { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.2); }
+
+.btn:hover { background: white; color: black; border-color: white; }
+
+/* --- INFO DRAWER --- */
+.drawer-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+    opacity: 0; visibility: hidden;
+    transition: var(--transition-smooth);
+}
+
+.drawer {
+    position: fixed;
+    top: 0; right: -500px; width: 100%; max-width: 450px; height: 100%;
+    background: #111;
+    z-index: 101;
+    padding: 60px 40px;
+    transition: var(--transition-smooth);
+    box-shadow: -10px 0 50px rgba(0,0,0,0.9);
+    border-left: 1px solid var(--cinematic-gold);
+}
+
+.drawer.active { right: 0; }
+.drawer-overlay.active { opacity: 1; visibility: visible; }
+
+.drawer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--cinematic-gold);
+    margin-bottom: 20px;
+}
+
+.drawer p { line-height: 1.8; color: #bbb; margin-bottom: 30px; }
+
+.close-drawer {
+    position: absolute;
+    top: 20px; right: 20px;
+    background: none; border: none; color: white;
+    font-size: 2rem; cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+/* Scroll Animation classes */
+[data-aos] { opacity: 0; transform: translateY(30px); transition: var(--transition-smooth); }
+[data-aos].visible { opacity: 1; transform: translateY(0); }
+/* New Style for the Type Tag */
+.type-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(197, 160, 89, 0.15); /* Gold tint */
+    border: 1px solid var(--cinematic-gold);
+    color: var(--cinematic-gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+/* Update Drawer spacing to accommodate the tag */
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.drawer h2 {
+    margin-top: 5px; /* Adjusting gap between tag and title */
+}
+
+/* Ensure images don't look squashed in different viewports */
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
