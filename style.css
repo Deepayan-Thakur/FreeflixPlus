@@ -221,4 +221,77 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+/* --- MOBILE RESPONSIVENESS --- */
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        height: 40vh; /* Reduced height for mobile */
+    }
+
+    header h1 {
+        letter-spacing: 6px; /* Tighter tracking for small screens */
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 20px;
+        margin-top: -30px; /* Bring content up slightly more */
+    }
+
+    /* Grid layout: Single column on small devices */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Drawer adjustments for small screens */
+    .drawer {
+        width: 100%; /* Full width drawer on mobile */
+        max-width: 100%;
+        right: -100%; /* Hide off-screen horizontally */
+        padding: 50px 30px;
+    }
+
+    .drawer h2 {
+        font-size: 2rem;
+    }
+
+    /* Section Header scaling */
+    .section-header {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra small devices (Phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically on very narrow screens */
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) {
+    .card:hover {
+        transform: none; /* Disable lift effect to prevent "sticky" hover states on touch */
+    }
+    
+    .img-box img {
+        filter: grayscale(0%); /* Show full color by default on touch devices */
+    }
 }
