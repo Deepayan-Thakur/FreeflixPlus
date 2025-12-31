@@ -41,6 +41,13 @@ const library = [
                 url: "https://watchanimeworld.in/", 
                 img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_ZFMklPRJ3oR94vyT3imWGspHi_8BPgoBg&s",
                 desc: "Watchanimeworld.in is a specialized streaming platform catering to Indian anime fans, offering a vast library of series and movies dubbed or subtitled in Hindi, Tamil, and Telugu. While it serves as a popular cultural bridge with high-quality HD streams and regular updates, it is an unofficial site hosting unlicensed content. To ensure safety from potential security risks like data tracking or malicious redirects, users should always browse with a VPN and an active ad-blocker."
+            },
+            { 
+                name: "LACartoons", 
+                type: "Streaming",
+                url: "https://lacartoons.com/", 
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64K-m3_TZmjCM4FQqgbfLCIO3_DwwTs_tsw&s",
+                desc: "**Lacartoons.com** is a popular streaming platform tailored for Spanish-speaking audiences, specializing in retro animated series and "nostalgic" childhood cartoons. While it offers a vast, organized library of classic content for free, it is an unofficial site hosting unlicensed media. Users should be extremely cautious of aggressive pop-up ads and potential redirects to scam websites, making a robust ad-blocker and VPN essential for a safe viewing experience."
             }
         ]
     }
@@ -99,4 +106,5 @@ function init() {
 
 document.getElementById('close-drawer').onclick = closeDrawer;
 overlay.onclick = closeDrawer;
+
 window.onload = init;
