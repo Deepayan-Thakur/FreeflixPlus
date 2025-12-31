@@ -1,4 +1,3 @@
-/* ... Keep previous CSS ... */
 :root {
     --cinematic-black: #050505;
     --cinematic-gold: #c5a059;
@@ -20,7 +19,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Background Vignette Effect */
 body::before {
     content: "";
     position: fixed;
@@ -295,3 +293,4 @@ footer {
         filter: grayscale(0%); /* Show full color by default on touch devices */
     }
 }
+
