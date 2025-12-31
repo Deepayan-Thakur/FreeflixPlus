@@ -47,8 +47,8 @@ const library = [
                 type: "Streaming",
                 url: "https://lacartoons.com/", 
                 img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64K-m3_TZmjCM4FQqgbfLCIO3_DwwTs_tsw&s",
-                desc: "**Lacartoons.com** is a popular streaming platform tailored for Spanish-speaking audiences, specializing in retro animated series and "nostalgic" childhood cartoons. While it offers a vast, organized library of classic content for free, it is an unofficial site hosting unlicensed media. Users should be extremely cautious of aggressive pop-up ads and potential redirects to scam websites, making a robust ad-blocker and VPN essential for a safe viewing experience."
-            }
+                desc: "Lacartoons.com is a popular streaming platform tailored for Spanish-speaking audiences, specializing in retro animated series and 'nostalgic' childhood cartoons. While it offers a vast, organized library of classic content for free, it is an unofficial site hosting unlicensed media. Users should be extremely cautious of aggressive pop-up ads and potential redirects to scam websites, making a robust ad-blocker and VPN essential for a safe viewing experience."
+            },
         ]
     }
 ];
@@ -108,3 +108,4 @@ document.getElementById('close-drawer').onclick = closeDrawer;
 overlay.onclick = closeDrawer;
 
 window.onload = init;
+
