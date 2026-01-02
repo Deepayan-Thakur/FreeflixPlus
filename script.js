@@ -2,53 +2,75 @@ const library = [
     {
         category: "Cinematic Narratives",
         items: [
-            { 
-                name: "YTS.mx", 
+            {
+                name: "YTS.mx",
                 type: "Downloading",
-                url: "https://www.yts-official.to/", 
+                url: "https://www.yts-official.to/",
                 img: "https://upload.wikimedia.org/wikipedia/commons/1/18/YTS_logo.png",
                 desc: "YTS-official.to is a popular torrent website that specializes in providing high-definition movie downloads with significantly small file sizes. It serves as an unofficial clone of the original YIFY group, offering a searchable library of films in 720p, 1080p, and 4K resolutions."
             },
-            { 
-                name: "BollyFlix", 
+            {
+                name: "BollyFlix",
                 type: "Downloading",
-                url: "https://bollyflix.do/", 
+                url: "https://bollyflix.do/",
                 img: "https://i2.wp.com/sjrestates.com/wp-content/uploads/2024/03/bollyflix.png",
                 desc: "Bollyflix.do is a specialized streaming hub for Bollywood and South Indian cinema, offering high-definition movies and Hindi-dubbed content without subscription fees. While its massive, easily searchable library appeals to Indian cinema fans, the site is a pirate platform hosting unlicensed material. Users face significant risks from malware-heavy ads and tracking scripts, making the use of a robust VPN and ad-blockers mandatory for safety. Always prioritize legal alternatives to avoid copyright issues and security threats."
             },
-            { 
-                name: "SSR Movies",  
+            {
+                name: "SSR Movies",
                 type: "Downloading",
-                url: "https://ssrmovies.you/", 
+                url: "https://ssrmovies.you/",
                 img: "https://www.tradeflockasia.com/wp-content/uploads/2025/05/SSR-Movies-Stream-New-Releases-Fast.webp",
                 desc: "SSRMovies.you is a specialized digital platform for downloading Bollywood, Hollywood, and Hindi-dubbed content, particularly popular for its '300MB' highly compressed HD files. While it offers a fast, vast library of movies and web series for free, it is a piracy-based site operating through various mirror domains to bypass legal restrictions. Users should be aware of significant security risks from aggressive 'malvertising' and pop-ups; therefore, using a dedicated ad-blocker and a VPN is crucial to protect your personal data and maintain privacy while browsing."
             },
+            {
+                name: "FilmyFiy",
+                type: "Downloading",
+                url: "https://filmyfiy.dad/",
+                img: "https://img.iwebp.store/images/files/afaa901b76bc48d57a346319423035dd384208.png",
+                desc: "FilmyFiy.dad is a free movie download platform offering Bollywood, Hollywood, and regional Indian films in multiple resolutions. The site operates as a piracy-based service and frequently changes domains to avoid takedowns. Users should expect aggressive ads and redirects, making the use of a VPN and strong ad-blocker essential for safe browsing."
+            },
+            {
+                name: "MovieBox",
+                type: "Streaming",
+                url: "https://moviebox.ph/",
+                img: "https://raw.githubusercontent.com/Deepayan-Thakur/FreeflixPlus/deepayan-thakur-update/Assets/MovieBox.png",
+                desc: "MovieBox.ph is a popular streaming platform providing movies and TV shows in HD quality with a clean interface. While it is widely used for free streaming, the platform operates without official licensing. Users should be cautious of data tracking and potential legal implications when accessing content."
+            },
+            {
+                name: "2DayToNvet",
+                type: "Streaming",
+                url: "https://2daytonvet.com/home/",
+                img: "https://raw.githubusercontent.com/Deepayan-Thakur/FreeflixPlus/deepayan-thakur-update/Assets/2daytonvet.png",
+                desc: "2DayToNvet.com is a free online streaming website offering a wide collection of movies and TV series. The site is known for frequent mirror domains and unlicensed content distribution. Due to intrusive ads and redirect behavior, users should browse with a VPN and an active ad-blocker."
+            },
+
         ]
     },
     {
         category: "Animated Masterpieces",
         items: [
-            { 
-                name: "9Anime", 
+            {
+                name: "9Anime",
                 type: "Streaming",
-                url: "https://9anime.org.lv/", 
+                url: "https://9anime.org.lv/",
                 img: "https://m.media-amazon.com/images/I/21-chrUuRXL.jpg",
                 desc: "9anime.org.lv is a high-traffic streaming site offering a massive, free library of subbed and dubbed anime in HD quality. While it provides a sleek interface and regular updates, it is an unofficial pirate platform that lacks licensing rights, posing significant legal and security risks. To stay safe from intrusive ads, redirects, and potential malware, users must use a VPN and a reliable ad-blocker. Always verify the domain, as frequent mirror changes are common to avoid shutdowns."
             },
-            { 
-                name: "Anime World India", 
+            {
+                name: "Anime World India",
                 type: "Streaming",
-                url: "https://watchanimeworld.in/", 
+                url: "https://watchanimeworld.in/",
                 img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs_ZFMklPRJ3oR94vyT3imWGspHi_8BPgoBg&s",
                 desc: "Watchanimeworld.in is a specialized streaming platform catering to Indian anime fans, offering a vast library of series and movies dubbed or subtitled in Hindi, Tamil, and Telugu. While it serves as a popular cultural bridge with high-quality HD streams and regular updates, it is an unofficial site hosting unlicensed content. To ensure safety from potential security risks like data tracking or malicious redirects, users should always browse with a VPN and an active ad-blocker."
             },
-            // { 
-            //     name: "LACartoons", 
-            //     type: "Streaming",
-            //     url: "https://lacartoons.com/", 
-            //     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64K-m3_TZmjCM4FQqgbfLCIO3_DwwTs_tsw&s",
-            //     desc: "Lacartoons.com is a popular streaming platform tailored for Spanish-speaking audiences, specializing in retro animated series and 'nostalgic' childhood cartoons. While it offers a vast, organized library of classic content for free, it is an unofficial site hosting unlicensed media. Users should be extremely cautious of aggressive pop-up ads and potential redirects to scam websites, making a robust ad-blocker and VPN essential for a safe viewing experience."
-            // },
+            {
+                name: "LACartoons",
+                type: "Streaming",
+                url: "https://lacartoons.com/",
+                img: "https://raw.githubusercontent.com/Deepayan-Thakur/FreeflixPlus/deepayan-thakur-update/Assets/LACartoons.png",
+                desc: "LACartoons.com is a streaming platform focused on animated series and cartoons, especially classic and retro content. While it offers a large free library, the site operates without official licensing and relies heavily on ads. Users should take precautions such as using an ad-blocker and VPN to avoid malicious redirects."
+            },
         ]
     }
 ];
@@ -62,7 +84,7 @@ function openDrawer(name, desc, url, type) {
     document.getElementById('drawer-desc').innerText = desc;
     document.getElementById('drawer-link').href = url;
     document.getElementById('drawer-type').innerText = type; // Set the type
-    
+
     drawer.classList.add('active');
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
